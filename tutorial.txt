@@ -6,10 +6,12 @@ de launch duoc gazebo, trong terminal day (root) chay lenh:
 export DISPLAY=:1
 export QT_QPA_PLATFORM=xcb
 export QT_X11_NO_MITSHM=1
-sau do vao duoc nhu binh thuong
+sau do vao duoc nhu binh thuong (bat duoc ca vscode)
 
 (omx) root@nta:~/ros2_ws/src/controller$ sed -i '1s|^.*$|#!/home/nta/miniconda3/envs/omx/bin/python|' install/controller/lib/controller/new_controller ____ Neu lam ntn thi ros2 se chay cung lib voi python he thong
 
 Chay luon bang file he thong thay vi ros2 run : python install/controller/lib/controller/new_controller (colcon build roi source nhu binh thuong)
 
 sudo code ~/ros2_ws/src --user-data-dir=~/.vscode --no-sandbox (VSCode root)
+
+sau khi vao root bang ./container.sh enter, tao (neu chua co) roi conda activate omx (bat venv), sau day chay nhu da thong bao phia tren
