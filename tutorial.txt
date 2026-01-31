@@ -8,7 +8,7 @@ export QT_QPA_PLATFORM=xcb
 export QT_X11_NO_MITSHM=1
 sau do vao duoc nhu binh thuong
 
-(omx) root@nta:~/lerobot/controller$ sed -i '1s|^.*$|#!/home/nta/miniconda3/envs/omx/bin/python|' install/controller/lib/controller/new_controller ____ Neu lam ntn thi ros2 se chay cung lib voi python he thong
+(omx) root@nta:~/ros2_ws/src/controller$ sed -i '1s|^.*$|#!/home/nta/miniconda3/envs/omx/bin/python|' install/controller/lib/controller/new_controller ____ Neu lam ntn thi ros2 se chay cung lib voi python he thong
 
 Chay luon bang file he thong thay vi ros2 run : python install/controller/lib/controller/new_controller (colcon build roi source nhu binh thuong)
 
