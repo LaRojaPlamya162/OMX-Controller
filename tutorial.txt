@@ -1,6 +1,6 @@
 docker cp physical_ai_server:/root/ros2_ws/src/physical_ai_tools/docker/huggingface/lerobot/LearnDLFromScratch/omx_f_PickUp/data/chunk-000/episode_000003.parquet . (Copy parquet file tu docker sang lerobot venv de train) (chi duoc 1 file 1 lan, co the copy folder)
 
-neu su dung controller package, doi sang omx venv (conda activate omx)
+neu su dung controller package, doi sang omx venv (conda activate omx ben trong root trong docker container)
 
 de launch duoc gazebo, trong terminal day (root) chay lenh: 
 export DISPLAY=:1
@@ -8,7 +8,7 @@ export QT_QPA_PLATFORM=xcb
 export QT_X11_NO_MITSHM=1
 sau do vao duoc nhu binh thuong
 
-(omx) nta@nta:~/lerobot/controller$ sed -i '1s|^.*$|#!/home/nta/miniconda3/envs/omx/bin/python|' install/controller/lib/controller/new_controller ____ Neu lam ntn thi ros2 se chay cung lib voi python he thong
+(omx) root@nta:~/lerobot/controller$ sed -i '1s|^.*$|#!/home/nta/miniconda3/envs/omx/bin/python|' install/controller/lib/controller/new_controller ____ Neu lam ntn thi ros2 se chay cung lib voi python he thong
 
 Chay luon bang file he thong thay vi ros2 run : python install/controller/lib/controller/new_controller (colcon build roi source nhu binh thuong)
 
